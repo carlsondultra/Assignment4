@@ -1,6 +1,7 @@
 package com.example.assignment4;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,11 +33,23 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull FoodViewHolder foodViewHolder, int i) {
+    public void onBindViewHolder(@NonNull final FoodViewHolder foodViewHolder, int i) {
 
         foodViewHolder.imageView.setImageResource(myFoodList.get(i).getFoodImage());
         foodViewHolder.mTitle.setText(myFoodList.get(i).getFoodName());
         foodViewHolder.mDescription.setText(myFoodList.get(i).getFoodDescription());
+
+        foodViewHolder.mCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(mContext,DetailedActivity.class);
+                intent.putExtra("Image",myFoodList.get(foodViewHolder.getAdapterPosition()).getFoodImage());
+                intent.putExtra("Description", myFoodList.get(foodViewHolder.getAdapterPosition()).getFoodDescription());
+                mContext.startActivity(intent);
+
+            }
+        });
 
     }
 
