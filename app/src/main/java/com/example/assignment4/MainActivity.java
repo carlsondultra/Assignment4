@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         myFoodList = new ArrayList<>();
 
-        mFoodInfo = new FoodInfo("This is the name of the food 1 ","This is description of the food 1 ",R.drawable.food1);
+        mFoodInfo = new FoodInfo("This is the name of the food 1 ","This is description of the food 1 ",R.drawable.springroll);
         myFoodList.add(mFoodInfo);
 
         mFoodInfo = new FoodInfo("Name Food 2 ","Description food 2 ",R.drawable.food2);
