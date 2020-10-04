@@ -28,16 +28,16 @@ public class MainActivity extends AppCompatActivity {
 
         myFoodList = new ArrayList<>();
 
-        mFoodInfo = new FoodInfo("This is the name of the food 1 ","This is description of the food 1 ",R.drawable.springroll);
+        mFoodInfo = new FoodInfo("Spring Rolls","This is very delicious to munch on as a casual snack or in a platter to entertain guests ",R.drawable.springroll);
         myFoodList.add(mFoodInfo);
 
-        mFoodInfo = new FoodInfo("Name Food 2 ","Description food 2 ",R.drawable.food2);
+        mFoodInfo = new FoodInfo("Pineapple Salmon","A sweet yet savoury fish dish which is sure to bring a neat twist into your cuisine",R.drawable.food2);
         myFoodList.add(mFoodInfo);
 
-        mFoodInfo = new FoodInfo("Name food 3 ","Description food 3",R.drawable.food3);
+        mFoodInfo = new FoodInfo("Mixed Breakfast Platter","A simple yet delicious meal with nutritional values",R.drawable.food3);
         myFoodList.add(mFoodInfo);
 
-        mFoodInfo = new FoodInfo("Name food 4","Description food 4",R.drawable.food4);
+        mFoodInfo = new FoodInfo("Spaghetti","A classic food which is popular in many European countries",R.drawable.food4);
         myFoodList.add(mFoodInfo);
 
         FoodAdapter foodAdapter = new FoodAdapter(MainActivity.this,myFoodList);
