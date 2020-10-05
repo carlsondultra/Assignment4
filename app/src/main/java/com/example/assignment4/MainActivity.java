@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         mFoodInfo = new FoodInfo("Mixed Breakfast Platter","A simple yet delicious meal with nutritional values",R.drawable.food3);
         myFoodList.add(mFoodInfo);
 
-        mFoodInfo = new FoodInfo("Spaghetti","A classic food which is popular in many European countries",R.drawable.food4);
+        mFoodInfo = new FoodInfo("Spaghetti","A classic food which is popular in many European countries",R.drawable.jollibee);
         myFoodList.add(mFoodInfo);
 
         FoodAdapter foodAdapter = new FoodAdapter(MainActivity.this,myFoodList);
